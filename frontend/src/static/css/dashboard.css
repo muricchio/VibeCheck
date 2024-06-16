@@ -1,0 +1,76 @@
+.emotion-img {
+    max-width: 40px;
+    margin: auto;
+    margin-bottom: 10px;
+}
+
+#define-vibes-modal {
+    position: inline;
+    background-color: white;
+    width: 80%;
+    padding: 20px;
+    border-radius: 20px;
+    border: 1em solid #824eea;
+}
+
+#define-vibes-modal button {
+    border-radius: 5px;
+    border: solid black 1px;
+}
+
+#submit-user-vibes {
+    margin-top: 20px;
+}
+
+#inputs {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+}
+
+#sign-in-out {
+    position: absolute;
+    left: 80%;
+}
+
+#playlists-table {
+    display: flex;
+    flex-direction: column;
+}
+
+#playlists-table > a {
+    margin-bottom: 1em;
+}
+
+#overall-vibe {
+    color: #824eea;
+}
+
+.playlist-button {
+    background-color: #824eea;
+    color: white;
+    border: solid white 2px;
+}
+
+.section-banner {
+    color: #824eea;
+    font-weight: bold;
+    font-size: 150%;
+}
+
+th {
+    font-weight: bold;
+    text-align: left;
+}
+
+td {
+    padding: 4px;
+}
+
+#vibes > h2 {
+    text-align: center;
+}
+
+.heading {
+    text-align: center;
+}

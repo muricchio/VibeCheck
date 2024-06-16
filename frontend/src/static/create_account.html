@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Create a VibeCheck Account</title>
+  <link rel="stylesheet" href="/css/styles.css">
+  <link rel="stylesheet" href="/css/createAccount.css">
+  <script deref src="/js/create_account.js"></script>
+  <!-- BEGIN INSTALLABLE APP-->
+  <link rel="manifest" href="/manifest.webmanifest" crossorigin="use-credentials" />
+  <meta name="theme-color" content="#824eea">
+  <link rel="apple-touch-icon" href="/images/logo192.png">
+  <link rel="icon" type="image/png" href="/images/icon.png">
+  <!-- END INSTALLABLE APP-->
+</head>
+<body>
+  <h1>VibeCheck</h1>
+  <h2>Create Account</h2>
+  <div id="error-banner" hidden>Cannot create an account with these credentials.</div>
+  <form>
+    <input id="username" type="text" placeholder="Username">
+    <br>
+    <input id="password" type="password" placeholder="Password">
+    <br>
+    <button id="submit" type="button">Create Account</button>
+    <button id="home" type="button" onclick="home()">Home</button>
+  </form>
+</body>
+</html>

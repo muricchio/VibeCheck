@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VibeCheck Rankings</title>
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/rankings.css">
+    <script defer src="/js/rankings.js"></script>
+    <script src="/js/common.js" type="module"></script>
+    <!-- BEGIN INSTALLABLE APP-->
+    <link rel="manifest" href="/manifest.webmanifest" crossorigin="use-credentials" />
+    <meta name="theme-color" content="#824eea">
+    <link rel="apple-touch-icon" href="/images/logo192.png">
+    <link rel="icon" type="image/png" href="/images/icon.png">
+    <!-- END INSTALLABLE APP-->
+</head>
+<body>
+    <div class="heading">
+        <a href="dashboard"><button>Main Page</button></a>
+        <div class="profile">
+            <p id="username"></p>
+            <img id="profile-picture">
+            <p id="sign-in-out"></p>
+        </div> 
+        <h1>VibeCheck</h1>
+        <h3>Sometimes you just need a vibe check.</h3>
+    </div>
+    <p>Vibe Rankings</p>
+    <ol id="rankings"></ol>
+</body>
+</html>

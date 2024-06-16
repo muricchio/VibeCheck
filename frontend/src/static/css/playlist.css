@@ -1,0 +1,39 @@
+.mainContent {
+    background-color: #343434;
+    align-self: center;
+    text-align: center;
+}
+
+.table {
+    background-color: #343434;
+    align-self: center;
+    flex-grow: 1;
+}
+
+.loadMore {
+    max-width: 20%;
+    max-height: 20%;
+}
+
+.mainPage {
+    align-self: center;
+}
+
+th {
+    font-size: 150%;
+    border: 2px solid white;
+}
+
+td {
+    padding: 4px;
+    border: 1px solid white;
+}
+
+#loadMore {
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+}
+
+#mood {
+    color: #824eea; 
+}

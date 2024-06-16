@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/authentication.css">
+    <script defer src="/js/spotify_authenticate.js"></script>
+    <script src="/js/common.js" type="module"></script>
+    <!-- BEGIN INSTALLABLE APP-->
+    <link rel="manifest" href="/manifest.webmanifest" crossorigin="use-credentials" />
+    <meta name="theme-color" content="#824eea">
+    <link rel="apple-touch-icon" href="/images/logo192.png">
+    <link rel="icon" type="image/png" href="/images/icon.png">
+    <!-- END INSTALLABLE APP-->
+</head>
+
+<body>
+    <button id="authButton" type="button">Authenticate with Spotify</button>
+    <button id="sign-in-out" onclick="logout()">Logout</button>
+</body>
+
+</html>

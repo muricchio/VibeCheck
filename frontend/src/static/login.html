@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VibeCheck Login</title>
+  <link rel="stylesheet" href="/css/styles.css">
+  <link rel="stylesheet" href="/css/login.css">
+  <script defer src="/js/login.js"></script>
+  <!-- BEGIN INSTALLABLE APP-->
+  <link rel="manifest" href="/manifest.webmanifest" crossorigin="use-credentials" />
+  <meta name="theme-color" content="#824eea">
+  <link rel="apple-touch-icon" href="/images/logo192.png">
+  <link rel="icon" type="image/png" href="/images/icon.png">
+  <!-- END INSTALLABLE APP-->
+</head>
+
+<body>
+  <h1>VibeCheck</h1>
+  <h2>Login</h2>
+  <div id="error-banner" hidden>Incorrect username and/or password.</div>
+  <form>
+    <input id="username" type="text" placeholder="Username">
+    <br>
+    <input id="password" type="password" placeholder="Password">
+    <br>
+    <div class="buttons">
+      <button id="login" type="button">Login</button>
+      <br>
+      <a href="create_account"><button id="create-account" type="button">Create Account</button></a>
+    </div>
+  </form>
+</body>
+
+</html>

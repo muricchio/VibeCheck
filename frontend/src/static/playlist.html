@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VibeCheck Playlist</title>
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/playlist.css">
+    <script defer src="/js/playlist.js"></script>
+    <script src="/js/common.js" type="module"></script>
+    <!-- BEGIN INSTALLABLE APP-->
+    <link rel="manifest" href="/manifest.webmanifest" crossorigin="use-credentials" />
+    <meta name="theme-color" content="#824eea">
+    <link rel="apple-touch-icon" href="/images/logo192.png">
+    <link rel="icon" type="image/png" href="/images/icon.png">
+    <!-- END INSTALLABLE APP-->
+</head>
+
+<body>
+    <div class="mainContent">
+        <h1 id="playlistName">Playlist Name</h1>
+        <h2 id="mood"></h2>
+    </div>
+    <div class="table">
+        <table id="table">
+            <tr>
+                <th>Track Name</th>
+                <th>Artist</th>
+                <th>Vibe</th>
+            </tr>
+        </table>
+    </div>
+    <button id="loadMore" class="loadMore" onclick="loadMore()">Load More</button>
+    <a href="dashboard" class="mainPage"><button type="button">Main Page</button></a>
+</body>
+
+</html>

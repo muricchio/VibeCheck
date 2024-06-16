@@ -1,0 +1,32 @@
+body {
+    text-align: center;
+}
+#main {
+    margin-top:  3rem;
+}
+
+#tracks-table {
+    margin-top: 3rem;
+}
+
+#select {
+    margin-top: 2rem;
+}
+
+#sign-in-out {
+    position: absolute;
+    left: 80%;
+}
+
+th {
+    font-weight: bold;
+    text-align: left;
+}
+
+td {
+    padding: 4px;
+}
+
+#loadMore {
+    margin-top: 3rem;
+}

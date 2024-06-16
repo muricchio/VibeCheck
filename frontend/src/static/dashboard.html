@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VibeCheck</title>
+  <link rel="stylesheet" href="/css/styles.css">
+  <link rel="stylesheet" href="/css/dashboard.css">
+  <script defer src="/js/dashboard.js"></script>
+  <script src="/js/common.js" type="module"></script>
+  <!-- BEGIN INSTALLABLE APP-->
+  <link rel="manifest" href="/manifest.webmanifest" crossorigin="use-credentials" />
+  <meta name="theme-color" content="#824eea">
+  <link rel="apple-touch-icon" href="/images/logo192.png">
+  <link rel="icon" type="image/png" href="/images/icon.png">
+  <!-- END INSTALLABLE APP-->
+</head>
+<body> 
+  <div class="heading">
+    <div class="profile">
+        <p id="username"></p>
+        <img id="profile-picture">
+        <button id="sign-in-out" onclick="logout()">Logout</button>
+    </div> 
+    <h1>VibeCheck</h1>
+    <h3>Sometimes you just need a vibe check.</h3>
+  </div>
+  <a href="authenticate" id="spotify-authenticate" hidden><h2>Please Authenticate with Spotify to Continue</h2></a>
+  <button id="define-vibes-button">Define Your Vibes</button>
+  <div id="define-vibes-modal" hidden>
+    <button id="exit-user-vibes">x</button>
+    <form id="user-vibes">
+      <div id="inputs">
+        <img class="emotion-img" src="/images/happiest.png">
+        <input id="euphoric-text" type="text" placeholder="Euphoric" value="Euphoric" required>
+        <img class="emotion-img" src="/images/happy.png">
+        <input id="happy-text" type="text" placeholder="Happy" value="Happy" required>
+        <img class="emotion-img" src="/images/neutral.png">
+        <input id="chill-text" type="text" placeholder="Chill" value="Chill" required>
+        <img class="emotion-img" src="/images/sad.png">
+        <input id="sad-text" type="text" placeholder="Sad" value="Sad" required>
+        <img class="emotion-img" src="/images/saddest.png">
+        <input id="depressed-text" type="text" placeholder="Depressed" value="Depressed" required>
+      </div>
+      <button id="submit-user-vibes" type="button">Vibe Check Me</button>
+    </form>
+  </div>
+  <div id="vibes" hidden>
+    <h2>Here's How You Scored on the Vibe Check:</h2>
+    <h2>Overall Vibe: <span id="overall-vibe"></span></h2>
+    <h3 class="section-banner">Top Tracks</h3>
+    <table id="tracks-table">
+      <tr>
+        <th>Track Name</th>
+        <th>Artist</th>
+        <th>Vibe</th>
+      </tr>
+    </table>
+    <a href="tracks"><button>See more about your Top Tracks</button></a>
+    <h3 class="section-banner">Top Artists</h3>
+    <table id="artists-table">
+      <tr>
+        <th>Artist</th>
+        <th>Vibe</th>
+      </tr>
+    </table>
+    <h3 class="section-banner">Saved Albums</h3>
+    <table id="albums-table">
+      <tr>
+        <th>Album</th>
+        <th>Vibe</th>
+      </tr>
+    </table>
+    <h3 class="section-banner">Playlists</h3>
+    <div id="playlists-table"></div>
+    <h3 class="section-banner">Rankings</h3>
+    <a href="rankings"><button>See how other users ranked</button></a>
+  </div>
+</body>
+</html>
